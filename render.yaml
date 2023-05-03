@@ -1,7 +1,7 @@
 services:
   # A Docker web service
   - type: web
-    name: XList+Xria2
+    name: Allmx
     env: docker
     repo: https://github.com/0ALLMX01/AList-Aria2-Render.git # optional
     region: Singapore # optional (defaults to oregon)
@@ -11,21 +11,21 @@ services:
       - key: DB_TYPE
         # value: sqlite3
         sync: false
-      - key: DB_HOST
+      - key: db.bit.io
         # value: db_host
         sync: false
-      - key: DB_PORT
-        # value: 3306
+      - key: 5432
+        # value: 5432
         sync: false
-      - key: DB_USER
+      - key: allmx
         # value: db_user
         sync: false
-      - key: DB_PASS
+      - key: v2_42R3B_uWaqZzXKjsHRnPi2cgQ9Lxe
         # value: db_password
         sync: false
-      - key: DB_NAME
+      - key: allmx/Yaemiko
         # value: db_name
         sync: false
       - key: DB_TABLE_PREFIX
-        # value: alist_
+        # value: rlist
         sync: false
